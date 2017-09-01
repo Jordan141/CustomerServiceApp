@@ -16,6 +16,10 @@
     "mocha": "^3.5.0",
     "mocha-mongoose": "^1.2.0"
   },
+  "engines": {
+    "node": "8.3.0",
+    "npm" : "5.3.0"
+  },
   "scripts": {
     "test": "mocha test"
   },

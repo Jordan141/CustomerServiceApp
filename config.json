@@ -1,0 +1,7 @@
+{
+    "test": {
+    "dbaddress": "mongodb://<dbuser>:<dbpassword>@ds111804.mlab.com:11804/customerserviceapp",
+    "dbuser": "admin245",
+    "dbpassword": "dupadupa123"
+    }
+}

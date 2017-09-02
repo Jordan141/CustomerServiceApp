@@ -6,7 +6,7 @@ A live webchat application to provide instantaneous customer support 24/7, utili
 - [x] Set up continuous integration
 - [ ] Design the architecture of the system
 - [x] Initialize a heroku domain for alpha stages
-- [ ] Experiment with Sockets.IO for the communication portion
+- [x] Experiment with Sockets.IO for the communication portion
 - [ ] Brainstorm DB normalization and security problems
-- [ ] Choose a front-end framework, ReactJS/ Angular / Electron
+- [x] Choose a front-end framework, ReactJS
 - [ ] Finish todo list

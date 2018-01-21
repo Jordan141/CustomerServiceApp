@@ -1,0 +1,18 @@
+<% include partials/header %>
+
+<div id="news-list"></div>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>            
+
+
+<% include partials/footer %>
+<script>  
+    var socket = io(window.location.href)
+    
+    socket.on('message', function(data){
+        var div = document.getElementById('news-list')
+        console.log('Rendering news:', data)
+        data.map(newsItem => div.innerHTML += `<h3>${newsItem.name}: <small>${newsItem.message}</small></h3><br>`)
+        socket.emit('my other event', {my : 'data'})
+    })
+</script>

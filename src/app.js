@@ -12,18 +12,19 @@ const   express             = require('express'),
         User                = require('./models/user')
         
         
-const authRoutes = require('./routes/index')
+const   authRoutes = require('./routes/index'),
+        chatRoutes = require('./routes/chat')
 
-app.use(express.static(__dirname + '/public'))
-app.use(bodyParser.urlencoded({extended: true}))
-app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
+app.set('views', __dirname + '/views')
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(express.static(__dirname + '/public'))
 
 
 //PASSPORT CONFIGURATION
 app.use(require('express-session')({
     //Change this key for your project
-    secret:'denmarkisbetterthanswedenandfinland',
+    secret:'fakekeyforgithubrepo',
     resave: false,
     saveUninitialized: false
 }))
@@ -37,8 +38,6 @@ passport.use(new LocalStrategy(User.authenticate()))
 passport.serializeUser(User.serializeUser())
 passport.deserializeUser(User.deserializeUser())
 
-app.use('/', authRoutes)
-
 app.use((req,res,next) => {
     res.locals.currentUser = req.user;
     res.locals.error = req.flash('error')
@@ -46,6 +45,9 @@ app.use((req,res,next) => {
     next()
     }
 )
+
+app.use('/', authRoutes)
+app.use('/chat', chatRoutes)
 
 
 

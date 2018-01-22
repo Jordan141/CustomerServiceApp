@@ -5,7 +5,7 @@ const User = require('../models/user')
 const {isLoggedIn} = require('../middleware')
 
 router.get('/', function(req,res){
-    res.render('home')
+    res.render('home', {currentUser: req.user})
 })
 router.get('/login', function(req,res){
     res.render('login')

@@ -9,5 +9,7 @@ A live webchat application to provide instantaneous customer support 24/7, utili
 - [x] Experiment with Sockets.IO for the communication portion
 - [ ] Brainstorm DB normalization and security problems
 - [x] Choose a front-end framework, ReactJS
-- [ ] Add login and register functionality
-- [ ] Create Schema for users
+- [X] Add login and register functionality
+- [X] Create Schema for users
+- [ ] Create sessions for each chat
+- [ ] Create user types (Such as admin, user, support)

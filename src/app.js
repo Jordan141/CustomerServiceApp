@@ -9,12 +9,14 @@ const   express             = require('express'),
         methodOverride      = require('method-override'),
         cookieParser        = require("cookie-parser"),
         mongoose            = require('mongoose'),
-        User                = require('./models/user')
+        User                = require('./models/user'),
+        {test}              = require('../config')
         
         
 const   authRoutes = require('./routes/index'),
         chatRoutes = require('./routes/chat')
 
+mongoose.connect(test.dbaddress.replace('<dbuser>', test.dbuser).replace('<dbpassword>', test.dbpassword))
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.use(bodyParser.urlencoded({extended: true}))

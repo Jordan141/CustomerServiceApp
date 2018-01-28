@@ -3,5 +3,6 @@
     "dbaddress": "mongodb://<dbuser>:<dbpassword>@ds111804.mlab.com:11804/customerserviceapp",
     "dbuser": "admin245",
     "dbpassword": "dupadupa123"
-    }
+    },
+    "ADMIN_SECRET_CODE": "SomeRandomCode_CHANGEINPRODUCTION"
 }

@@ -5,9 +5,11 @@ const User = require('../models/user')
 const {isLoggedIn} = require('../middleware')
 const {ADMIN_SECRET_CODE} = require('../../config.json')
 
-router.get('/', function(req,res){
-    res.render('home', {currentUser: req.user})
+
+router.get('/', (req, res) => {
+    res.render('landing')
 })
+
 router.get('/login', function(req,res){
     res.render('login')
 })
@@ -27,8 +29,7 @@ router.post('/register', function(req,res){
         firstName: req.body.firstName,
         lastName : req.body.lastName,
         email: req.body.email,
-        avatar: req.body.avatar,
-        bio: req.body.bio
+        avatar: req.body.avatar
     })
     if(req.body.adminCode === ADMIN_SECRET_CODE){
         newUser.isAdmin = true

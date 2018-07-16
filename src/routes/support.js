@@ -1,15 +1,19 @@
 const express = require('express')
 const router = express.Router()
+const Support = require('../models/support')
 const passport = require('passport')
 const User = require('../models/user')
 const {isLoggedIn} = require('../middleware')
+const {ADMIN_SECRET_CODE} = require('../../config.json')
 
 
-router.get('/', isLoggedIn, (req,res) => {
-    res.render('chat', {currentUser: req.user})
-})
-router.post('/', isLoggedIn, (req,res) => {
-    res.send(`Received: ${JSON.stringify(req.body)}`)
+
+
+router.get('/', (req,res) => {
+    Support.find({}, (err, employees) => {
+        if(err) return console.log(err)
+        res.render('home', {employees, currentUser: req.user})
+    })
 })
 
 router.get('/:id', (req, res) => {
@@ -18,6 +22,5 @@ router.get('/:id', (req, res) => {
         res.render('show', {employee})
     })
 })
-
 
 module.exports = router

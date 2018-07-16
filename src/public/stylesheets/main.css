@@ -1,0 +1,21 @@
+.thumbnail img{
+    height: 256px;
+    width: 100%;
+}
+
+.thumbnail button {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.thumbnail{
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.deleteForm{
+    display: inline;
+}

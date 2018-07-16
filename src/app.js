@@ -10,10 +10,12 @@ const   express             = require('express'),
         cookieParser        = require("cookie-parser"),
         mongoose            = require('mongoose'),
         User                = require('./models/user'),
-        {test}              = require('../config')
+        {test}              = require('../config'),
+        seed                = require('./seed')
         
         
 const   authRoutes = require('./routes/index'),
+        supportRoutes = require('./routes/support')
         chatRoutes = require('./routes/chat')
 
 mongoose.connect(test.dbaddress.replace('<dbuser>', test.dbuser).replace('<dbpassword>', test.dbpassword))
@@ -36,6 +38,7 @@ app.use(methodOverride('_method'))
 app.use(cookieParser('secret'))
 app.use(flash())
 
+
 passport.use(new LocalStrategy(User.authenticate()))
 passport.serializeUser(User.serializeUser())
 passport.deserializeUser(User.deserializeUser())
@@ -49,6 +52,7 @@ app.use((req,res,next) => {
 )
 
 app.use('/', authRoutes)
+app.use('/support', supportRoutes)
 app.use('/chat', chatRoutes)
 
 
@@ -56,24 +60,6 @@ app.use('/chat', chatRoutes)
 
 const io = require('socket.io').listen(app.listen(port))
 
-io.on('connection', function(socket){
-    const fakeData = [
-           { name: 'Jerry', message: 'Hello!'},
-           { name: 'Brian', message: 'C++'},
-           { name: 'Chris', message: 'Sasdasdas'},
-           { name: 'Andy', message: '!!!!!!!!!!!!!!!!'}
-    ]
-    
-    socket.emit('message', fakeData)
-    
-    socket.on('my other event', function(data){
-        console.log(data);
-    })
-    socket.on('send', function(data){
-        console.log(data)
-        io.sockets.emit('message', data)
-    })
-})
 
 
 console.log('Listening on port: ' + port)

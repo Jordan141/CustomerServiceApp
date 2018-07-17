@@ -18,7 +18,7 @@ Solutions to these cons:
 - A system that provides the ability to review these reviews by providing a third party an anonimized version of
 the chat logs. Said third party will then determine if the review is justified. If it is not, remove it.
 - False information or simply using a username such as "CompanyName EmployeeID Number" - eg. Amazon 5453E3
-- Use professional images, but not those of themselves. Such as company logos or department labels.
+- Using professional images, but not those of themselves. Such as company logos or department labels.
 - Keep chats open between parties until the issue is resolved, or use an issue system similar to GitHub.
 
 ### Business Idea

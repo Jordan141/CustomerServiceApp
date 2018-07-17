@@ -5,15 +5,14 @@ A live webchat application to provide instantaneous customer support 24/7, utili
 
 This system is designed to give the power of reliable support back to the users who need it. Registered users have the
 ability to rate their support provider based on the quality of support they received. These reviews are then added to the public
-rating of the employee. This type of feedback system ensures that the staff is always working at their hardest to
-keep their customers happy.
+rating of the employee. This type of feedback system ensures that the staff are always working their hardest to keep their customers happy.
 
 Notable Cons:
 - Troll reviews.
-- Problems that support simply can't help with earning them a bad review.
+- Problems that support simply cannot help with earning them a poor review.
 - Employee information being public.
-- Keyboard racists only accepting support from ethnic groups they agree with (Easily viewable should there be avatars and real names).
-- Due to the timely nature of support requests and complaints, most issues will not be resolved in a single conversation.
+- Keyboard racists only accepting support from ethnic groups they agree with (Such things would be easily deducible should avatars be personal images).
+- Due to the lengthy nature of support requests and complaints, most issues will not be resolved in a single conversation.
 
 Solutions to these cons:
 - A system that provides the ability to review these reviews by providing a third party an anonimized version of
@@ -35,7 +34,6 @@ How will this increase the companies revenue?
 - A happy customer will be much more likely to continue using your service.
 - Many people make their decision on brand based on how a company handles issues with merchandise. ie. PC Hardware.
 Having a solid support system will attract these individuals.
-- Add more later
 
 ### To do list
 - [x] Create a MongoDB storage

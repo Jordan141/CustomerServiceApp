@@ -1,8 +1,6 @@
 const mongoose = require('mongoose')
 const uri = require('../src/models/mongoDBhandler').test_uri
-const should = require('chai').should()
 const Dummy = mongoose.model('Dummy', new mongoose.Schema({a : Number}))
-const clearDB = require('mocha-mongoose')(uri)
 
 describe('Example spec for a model', () => {
     beforeEach(function(done){

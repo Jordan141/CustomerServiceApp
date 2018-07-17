@@ -1,7 +1,4 @@
-const mongoose = require('mongoose')
-const {dbaddress, dbuser, dbpassword} = require('../../config.json').test
-
-const PRODUCTION_URI = ''//TODO add me later
+const {dbaddress, dbuser, dbpassword} = process.env
 
 const TEST_URI = dbaddress.replace('<dbuser>', dbuser).replace('<dbpassword>', dbpassword)
 

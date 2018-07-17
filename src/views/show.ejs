@@ -2,19 +2,13 @@
 <div class="row">
     <div class="col-md-3">
         <p class="lead">Customer Support</p>
-        <div class="list-group">
-            <li class="list-group-item active"> Info 1</li>
-            <li class="list-group-item"> Info 2</li>
-            <li class="list-group-item"> Info 3</li>
-        </div>
-        <div id="map"></div>
+        <img class="img-responsive" src="<%= employee.avatar %>">
     </div>
     <div class="col-md-9">
         <div class="thumbnail">
-            <img class="img-responsive" src="<%= employee.avatar %>">
             <div class="caption-full">
                 <h4 class="pull-right">Rating: <%= employee.rating %> / 5</h4>
-                <h4><a><%= `${employee.firstName} ${employee.lastName}` %></a></h4>
+                <h4><%= `${employee.firstName} ${employee.lastName}` %></h4>
                 <p><%= employee.description %></p>
                 <% if(currentUser && (employee.author.id.equals(currentUser._id) || currentUser.isAdmin)){ %>
                 <a class="btn btn-warning" href='/support/<%= employee._id%>/edit'>Edit</a>

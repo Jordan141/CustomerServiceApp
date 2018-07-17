@@ -31,22 +31,4 @@ describe('Example spec for a model', () => {
           });
         });
     });
-    it("can clear the DB on demand", function(done) {
-        new Dummy({a: 5}).save(function(err, model){
-          if (err) return done(err);
-    
-          clearDB(function(err){
-            if (err) return done(err);
-    
-            Dummy.find({}, function(err, docs){
-              if (err) return done(err);
-    
-              console.log(docs);
-    
-              docs.length.should.equal(0);
-              done();
-            });
-          });
-        });
-      });
 })

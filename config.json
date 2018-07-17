@@ -1,8 +1,3 @@
 {
-    "test": {
-    "dbaddress": "***********************************",
-    "dbuser": "***********",
-    "dbpassword": "***************"
-    },
     "ADMIN_SECRET_CODE": "SomeRandomCode_CHANGEINPRODUCTION"
 }

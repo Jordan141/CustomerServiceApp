@@ -10,7 +10,7 @@ const   express             = require('express'),
         cookieParser        = require("cookie-parser"),
         mongoose            = require('mongoose'),
         User                = require('./models/user'),
-        {test}              = require('../config'),
+        mongoDetails        = {"address": process.env.dbaddress, "user": process.env.dbuser, "password": process.env.dbpassword},
         seed                = require('./seed')
         
         
@@ -18,7 +18,7 @@ const   authRoutes = require('./routes/index'),
         supportRoutes = require('./routes/support')
         chatRoutes = require('./routes/chat')
 
-mongoose.connect(test.dbaddress.replace('<dbuser>', test.dbuser).replace('<dbpassword>', test.dbpassword))
+mongoose.connect(mongoDetails.address.replace('<dbuser>', mongoDetails.user).replace('<dbpassword>', mongoDetails.password))
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.use(bodyParser.urlencoded({extended: true}))

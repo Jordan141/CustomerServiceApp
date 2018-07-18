@@ -66,6 +66,19 @@ Having a solid support system will attract these individuals.
 - Find problems with the idea and solve them.
 - Create a profile page for the employee, providing relevent data.
 #### In Progress
-- Star system for rating
-- Registration page for employees
-- Edit your profile's information
+- Star system for rating.
+- Registration page for employees.
+- Edit your profile's information.
+### 17/07/2018
+#### Completed
+- Storyboarding.
+- Proofreading.
+- Database tweaks and fixes.
+### In Progress
+- Better UI for Profile page.
+- Edit Employee object to include more data.
+### 18/07/2018
+#### Completed
+- Small fix on homepage link
+-
+-

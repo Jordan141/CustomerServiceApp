@@ -1,4 +1,5 @@
 <% include partials/header %>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <div class="row">
     <h1 style="text-align: center">Sign Up</h1>
     <div style="width: 30%; margin: 25px auto;">
@@ -21,6 +22,14 @@
             <div class="form-group">
                 <input class="form-control" type="text" name="avatar" placeholder="Avatar image url" required>
             </div>
+            <div class="form-group text-center">
+                <div class="checkbox-group required">
+                    <input type="checkbox" id="user" name="userType" value="user" checked>
+                    <label for="user">User</label>
+                    <input type="checkbox" id="support" name="userType" value="support">
+                    <label for="support">Support</label>
+                </div>
+            </div>
             <div class="form-group">
                 <input class="form-control" type="text" name="adminCode" placeholder="Admin code" required>
             </div>
@@ -28,7 +37,19 @@
                 <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
             </div>
         </form>
-        <a href="/campgrounds">Go Back</a>
+        <a href="/support">Go Back</a>
     </div>
 </div>
+<script>
+$(document).ready(function () {
+    $('.checkbox-group.required :checkbox:checked').click(() => {
+        var checked = $("input[type=checkbox]:checked").length
+    
+        if(!checked) {
+            alert("You must check at least one checkbox.")
+            return false;
+        }
+    })
+})
+</script>
 <% include partials/footer %>

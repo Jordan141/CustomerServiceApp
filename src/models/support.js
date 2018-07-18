@@ -10,8 +10,8 @@ const supportSchema = new mongoose.Schema({
     email: String,
     rating: Number,
     bio: {type: String, default: ''},
-    department: String
-
+    department: String,
+    verified: {type: Boolean, default: false}
 })
 
 supportSchema.plugin(passportLocalSchema)

@@ -23,14 +23,14 @@ the chat logs. Said third party will then determine if the review is justified. 
 
 ### Business Idea
 
-How a company could use this application to improve their customer support system and improve relations with their consumer base.
+How a company could use this application to improve their customer support system and improve relations with their consumer base:
 - Feedback generated reviews let the client know that who they're talking to has been successful helping other clients.
 - Creates a healthy spark of competition to have a higher rating than your colleagues.
 - Employees missing the mark will be easy to spot for management so they can find the underperformers and take the 
 necesarry steps to prevent poor performance.
 - In-house reward system for the employee with the highest rating, ie. 2.5% bonus on monthly income for top three employees.
 
-How will this increase the companies revenue? 
+How will this increase the companies revenue:
 - A happy customer will be much more likely to continue using your service.
 - Many people make their decision on brand based on how a company handles issues with merchandise. ie. PC Hardware.
 Having a solid support system will attract these individuals.

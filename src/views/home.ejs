@@ -5,6 +5,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
 <div class="row text-center" style="display:flex; flex-wrap: wrap;">
     <% employees.forEach(employee => { %>
+        <%if(employee.verified){ %>
         <div class="col-md-3 col-sm-6">
             <div class="thumbnail">
                 <img src="<%= employee.avatar %>">
@@ -15,6 +16,7 @@
                 <a href='/support/<%= employee._id %>' class="btn btn-success">Chat!</a>
             </div>
         </div>
+        <% } %>
     <% }) %>
 </div>
 

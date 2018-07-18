@@ -10,7 +10,8 @@ const data = [
         lastName: 'Doe',
         bio: lorem,
         department: 'Human Resources',
-        rating: 3
+        rating: 3,
+        verified: true
     },
     {
         username: 'staffMember2',
@@ -20,7 +21,8 @@ const data = [
         lastName: 'Brown',
         bio: lorem,
         department: 'Accounting',
-        rating: 4
+        rating: 4,
+        verified: true
     },
     {
         username: 'staffMember3',
@@ -30,7 +32,8 @@ const data = [
         lastName: 'Smith',
         bio: lorem,
         department: 'Technical Support',
-        rating: 1
+        rating: 1,
+        verified: true
     },
     {
         username: 'staffMember4',
@@ -40,7 +43,8 @@ const data = [
         lastName: 'O Connel',
         bio: lorem,
         department: 'Finance',
-        rating: 5
+        rating: 5,
+        verified: true
     },
     {
         username: 'staffMember5',
@@ -50,7 +54,8 @@ const data = [
         lastName: 'White',
         bio: lorem,
         department: 'Marketing',
-        rating: 2
+        rating: 2,
+        verified: true
     }
 ]
 

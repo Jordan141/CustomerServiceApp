@@ -24,7 +24,7 @@ the chat logs. Said third party will then determine if the review is justified. 
 ### Business Idea
 
 How a company could use this application to improve their customer support system and improve relations with their consumer base:
-- Feedback generated reviews let the client know that who they're talking to has been successful helping other clients.
+- Feedback generated reviews lets the client know that whomever they're talking to has been successful helping other clients.
 - Creates a healthy spark of competition to have a higher rating than your colleagues.
 - Employees missing the mark will be easy to spot for management so they can find the underperformers and take the 
 necesarry steps to prevent poor performance.

@@ -8,7 +8,10 @@ const supportSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     email: String,
-    rating: Number
+    rating: Number,
+    bio: {type: String, default: ''},
+    department: String
+
 })
 
 supportSchema.plugin(passportLocalSchema)

@@ -39,7 +39,7 @@ router.post('/register', (req,res) => {
             }
             passport.authenticate('local')(req,res, () => {
                 req.flash('success', 'Successfully signed up! Nice to meet you ' + firstName)
-                res.redirect('/support')
+                return res.redirect('/support')
             })
         })
     }
@@ -57,7 +57,7 @@ router.post('/register', (req,res) => {
             }
             passport.authenticate('local')(req,res, () => {
                 req.flash('success', 'Successfully signed up! Nice to meet you ' + firstName)
-                res.redirect('/support')
+                return res.redirect('/support')
             })
         })
     }

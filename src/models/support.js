@@ -8,8 +8,8 @@ const supportSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     email: String,
-    rating: Number,
-    bio: {type: String, default: ''},
+    rating: {type: Number, default: 1},
+    bio: {type: String, default: 'Employee has yet to write a bio...'},
     department: String,
     verified: {type: Boolean, default: false}
 })

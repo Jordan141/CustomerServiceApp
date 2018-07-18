@@ -26,14 +26,12 @@ the chat logs. Said third party will then determine if the review is justified. 
 How a company could use this application to improve their customer support system and improve relations with their consumer base:
 - Feedback generated reviews lets the client know that whomever they're talking to has been successful helping other clients.
 - Creates a healthy spark of competition to have a higher rating than your colleagues.
-- Employees missing the mark will be easy to spot for management so they can find the underperformers and take the 
-necesarry steps to prevent poor performance.
+- Employees missing the mark will be easy to spot for management so that they can find the underperformers and take the necesarry steps to prevent poor performance.
 - In-house reward system for the employee with the highest rating, ie. 2.5% bonus on monthly income for top three employees.
 
 How will this increase the companies revenue:
 - A happy customer will be much more likely to continue using your service.
-- Many people make their decision on brand based on how a company handles issues with merchandise. ie. PC Hardware.
-Having a solid support system will attract these individuals.
+- Many people base their decisions of brand-choice by how well a company handles various issues with merchandise (ie. PC Hardware). Having a solid support system will attract these individuals.
 
 ### To do list
 - [x] Create a MongoDB storage
@@ -44,6 +42,7 @@ Having a solid support system will attract these individuals.
 - [x] Brainstorm DB normalization and security problems
 - [X] Add login and register functionality
 - [X] Create Schema for users
+- [ ] Small unauthorized bug after successful register of a user.
 - [ ] Create sessions for each chat
 - [ ] Create user types (Such as admin, user, support)
 - [ ] Automatically log all chats with timestamps and user information of both parties.
@@ -79,6 +78,8 @@ Having a solid support system will attract these individuals.
 - Edit Employee object to include more data.
 ### 18/07/2018
 #### Completed
-- Small fix on homepage link
--
--
+- Small fix on homepage link.
+- Added Support registration.
+- Limited support staff to those verified by admins.
+#### In Progress
+- Edit profile page for users and support.
